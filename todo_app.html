@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<body>
+
+
+<div class="todo-app">
+    <div class="title">Jing's Todo App</div>
+
+    <div class="todo-form">
+        <input class="todo-input" type="text" placeholder="Enter the task to do">
+        <div class="todo-button">Add Todo</div>
+    </div>
+    
+    <div class="item completed">
+        <div>
+            <input type="checkbox"/>
+            <span class="name">This is a todo item 1</span>
+        </div>
+
+        <div class="delete">Delete</div>
+    </div>
+    <div class="item">
+        <div>
+            <input type="checkbox"/>
+            <span class="name">This is a todo item 2</span>
+        </div>
+        
+        <div class="delete">Delete</div>
+    </div>
+    <div class="item">
+        <div>
+            <input type="checkbox"/>
+            <span class="name">This is a todo item 3</span>
+        </div>
+        
+        <div class="delete">Delete</div>
+    </div>
+    
+</div>  
+
+
+<style>
+    .completed {
+        text-decoration: line-through;
+        opacity: 0.5;
+        color: #888888;
+    }
+
+    .delete {
+        color: #ff0000;
+        cursor: pointer;
+        font-size: 15px;
+        user-select: none;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        width: 80%;
+        height: 50px;
+        margin:8px auto;
+        padding: 16px;
+        border-radius: 20px;
+        box-shadow:  rgba(149, 157, 165, 0.2)0px 8px 20px;
+    }
+
+    body {
+        background: linear-gradient(
+            to right,
+            rgb(113, 65,165), 
+            rgba(44, 114, 251,1)
+            );
+    }
+
+    .todo-app {
+        width:  98%;
+        height: 500px;
+        background-color: #ffffff;
+        margin-top: 40px;
+        margin-left: 1%;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding-top: 30px;
+    }  
+
+    .title {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        color: #1c1a1a;
+        margin-bottom: 20px;
+    }
+
+    .todo-form {
+        display: flex;
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+
+        
+    }
+
+    .todo-input {
+        margin-bottom: 30px;
+        border: 1px solid #dfe1dfe5;
+        outline: none;
+        width: 60%;
+        height: 50px;
+        border-radius: 20px 0 0 20px;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    .todo-button {
+        width: 100px;
+        height: 50px;
+        border-radius: 0 20px 20px 0;
+        line-height: 50px;
+        text-align: center;
+        background: linear-gradient(
+            to right, 
+            rgb(113, 65,165), 
+            rgba(44, 119, 251,1)
+            );
+
+        color: #fff;
+        cursor: pointer;
+        font-size: 15px;
+        user-select: none;
+    }
+</style>
+
+
+
+
+
